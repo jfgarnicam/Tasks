@@ -23,5 +23,38 @@ namespace Task_2
                 Console.WriteLine("Check point position test failed");
             }
         }
+
+        /* Function to test if the intersection point obtained by the function "getIntersectionPoint" 
+         * is actually inside the plane. The equation of the plane at the returned point is evaluated, 
+         * if the result is 0, the test is passed. 
+         */
+        public static void TestGetIntersectingPoint(double[] p0, double[] p1, double[] planeCoefficients)
+        {
+            double[] intersectingPoint = CutPolyline.getIntersectingPoint(p0, p1, planeCoefficients);
+
+            //Plane coefficients
+            double A = planeCoefficients[0];
+            double B = planeCoefficients[1];
+            double C = planeCoefficients[2];
+            double d = planeCoefficients[3];
+
+            // Coordinates of the intersecting point
+            double x = intersectingPoint[0];
+            double y = intersectingPoint[1];
+            double z = intersectingPoint[2];
+
+
+            if ( (A*x + B*y + C*z + d) == 0 )
+            {
+                Console.WriteLine("Get intersecting point Test passed");
+            }
+            else 
+            {
+                Console.WriteLine("Get intersecting point Test failed");
+            }
+
+        }
+
+
 }
 }

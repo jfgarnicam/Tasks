@@ -14,7 +14,7 @@ namespace Task_2
          * Output: List of arrays - Each array is a 3D point of the polyline or the
          * 3D point of intersection of the polyline with the plane.
         */
-        public static List<double[]> (List<double[]> polylinePoints, double[] planeCoefficients)
+        public static List<double[]> cutPolyline(List<double[]> polylinePoints, double[] planeCoefficients)
         {
             List<double[]> polylinePointsAbove = new List<double[]>();
 
