@@ -13,6 +13,8 @@
             // 2. Detect pair of points in oposite sites of the plane
             // 3. Calculate the intersection point
             // 4. Return Polyline + Points above and over the plane!
+
+            // Test cases: Plane z=0, vertical plane and diagonal plane
         }
     }
 }
