@@ -1,4 +1,5 @@
-﻿namespace Task1
+﻿using System;
+namespace Task1
 {
     class Task1
     {
