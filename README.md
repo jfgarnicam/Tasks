@@ -1,5 +1,5 @@
 ## Interview code
-# This project contains the solution to two problems presented in the problems.pdf file.
+This project contains the solution to two problems presented in the problems.pdf file.
 
 # How to run the programs
 1. Download the project in it last commit
